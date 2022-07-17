@@ -22,6 +22,7 @@ function runBuild() {
 
   // Get input options for startBuild
   const params = inputs2Parameters(githubInputs());
+  console.log(`Parms is: ${params}`);
 
   return build(sdk, params);
 }
