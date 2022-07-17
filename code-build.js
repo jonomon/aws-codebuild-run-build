@@ -152,7 +152,7 @@ async function waitForBuildEndTime(
 
 function githubInputs() {
   const projectName = core.getInput("project-name", { required: true });
-  const { owner, repo } = github.context.repo;
+//   const { owner, repo } = github.context.repo;
   const { payload } = github.context;
   // The github.context.sha is evaluated on import.
   // This makes it hard to test.
@@ -177,8 +177,8 @@ function githubInputs() {
 
   return {
     projectName,
-    owner,
-    repo,
+//     owner,
+//     repo,
     sourceVersion,
     buildspecOverride,
     envPassthrough,
